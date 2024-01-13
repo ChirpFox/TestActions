@@ -18,8 +18,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
  
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+      - name: "Configure AWS Credentials" Action for GitHub Actions
+        uses: aws-actions/configure-aws-credentials@v4.0.1
+            
         with:
           aws-region: eu-west-1
           role-to-assume: arn:aws:iam::683350395763:role/sts-lab-2-target
